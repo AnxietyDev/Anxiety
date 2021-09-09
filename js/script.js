@@ -69,8 +69,8 @@ const commands = {
 	}
 }
 
-var prephraseRoot = '<span class="red">root@tristanisgoated.xyz</span>:<span class="blue">~</span># ';
-var prephrase = '<span class="red">visitor@tristanisgoated.xyz</span>:<span class="blue">~</span># ';
+var prephraseRoot = '<span class="red">root@anxietydev.github.io</span>:<span class="blue">~</span># ';
+var prephrase = '<span class="red">visitor@anxietydev.github.io</span>:<span class="blue">~</span># ';
 
 var form = $('<div style="width: 100%;display: table"><div style="display: table-cell; width: 1%">' + prephrase + '</div>&nbsp<form id="form" style="display: table-cell; width :100%"><input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="tCommand" type="text" maxlength="48" class="nostyle" autofocus /></form></div>').appendTo('#content');
 
@@ -83,7 +83,7 @@ function OnlyRoot(command) {
 function launchCommandAsRoot(command) 
 {
 	var res = '';
-	if (command === './welcome.sh') res = 'Welcome to <span class="red">tristanisgoated.xyz</span>!<br></span><br>Made By:</span><span class="red"> Tristan</span><br>Total Visits: <span class="red">' + visits + '</span><br>Terminal Updated: <span class="red">' + lastUpdate +'</span><br><a href="https://tristanisgoated.xyz/seth/index.html" target="_blank"><u>Hall Of Clowns</u></a>:<span class="red"> Most Recent Hall Of Clowns.</span><br><br><b>Type \'help\' for more details on the commands</b>'
+	if (command === './welcome.sh') res = 'Welcome to <span class="red">anxietydev.github.io</span>!<br></span><br>Made By:</span><span class="red"> Tristan</span><br>Total Visits: <span class="red">' + visits + '</span><br>Terminal Updated: <span class="red">' + lastUpdate +'</span><br><a href="https://anxietydev.github.io/seth/index.html" target="_blank"><u>Hall Of Clowns</u></a>:<span class="red"> Most Recent Hall Of Clowns.</span><br><br><b>Type \'help\' for more details on the commands</b>'
 	else
 	{
 		window.alert("Nice try to changing \'root\' variable to 1");
@@ -157,7 +157,7 @@ $('form').on('submit', function(e) {
 				} else {
 					launchCommandAsVisitor({
 						cmd: vInput,
-						res: '<div><p>tristanisgoated.xyz: ' + vInput + ': No such file or directory</p></div>'
+						res: '<div><p>anxietydev.github.io: ' + vInput + ': No such file or directory</p></div>'
 					});
 				}
 			} else if (vInput.startsWith("cd ") || vInput === "cd" || vInput.startsWith("mkdir ") || vInput === "mkdir" || vInput.startsWith("touch ") || vInput === "touch" || vInput.startsWith("rm ") || vInput === "rm" || vInput === "ls") {
@@ -178,7 +178,7 @@ $('form').on('submit', function(e) {
 							res = '';
 						}
 					} else {
-						res = 'tristanisgoated.xyz: No passwd entry for user ' + loginArray[2] + '';
+						res = 'anxietydev.github.io: No passwd entry for user ' + loginArray[2] + '';
 					}
 					launchCommandAsVisitor({
 						cmd: loginArray[0] + ' ' + loginArray[2],
@@ -223,7 +223,7 @@ $('form').on('submit', function(e) {
 						});
 					}
 				} else if (vInput === "music link") {
-					var win = window.open("https://soundcloud.com/d3szn/gangland", "_blank");
+					var win = window.open("https://www.youtube.com/watch?v=cjBhgetyFyo", "_blank");
 					win.focus();
 					launchCommandAsVisitor({
 						cmd: vInput,
@@ -232,7 +232,7 @@ $('form').on('submit', function(e) {
 				} else {
 					launchCommandAsVisitor({
 						cmd: vInput,
-						res: '<div><p>[ <span class="red">tristanisgoated.xyz</span> ] Usage: music [play/stop/link]</p></div>'
+						res: '<div><p>[ <span class="red">anxietydev.github.io</span> ] Usage: music [play/stop/link]</p></div>'
 					});
 				}
 			} /*else if (vInput.startsWith("friend")) {
@@ -251,7 +251,7 @@ $('form').on('submit', function(e) {
 				} else {
 					launchCommandAsVisitor({
 						cmd: vInput,
-						res: '<div><p>[ <span class="red">tristanisgoated.xyz</span> ] Usage: friend [name/list]</p></div>'
+						res: '<div><p>[ <span class="red">anxietydev.github.io</span> ] Usage: friend [name/list]</p></div>'
 					});
 				}
 			}*/ else if (vInput.startsWith("insta")) {
@@ -281,7 +281,7 @@ $('form').on('submit', function(e) {
 				const Disk = '1TB';
 				launchCommandAsVisitor({
 						cmd: $('input').val(),
-						res: '<div><p>&#x2002&#x2002&#x2002SSSSSSSSSSSSSSS&#x2002&#x2002&#x2002&#x2002&#x2002<span class="red">visitor@tristanisgoated.xyz</span><br>&#x2002SS:::::::::::::::S&#x2002&#x2002&#x2002&#x2002<span class="red">OS:</span> Arch Linux ' + OSVer + '<br>S:::::SSSSSS::::::S&#x2002&#x2002&#x2002&#x2002<span class="red">Kernel:</span> ' + Kernel + '<br>S:::::S&#x2002&#x2002&#x2002&#x2002&#x2002SSSSSSS&#x2002&#x2002&#x2002&#x2002<span class="red">Uptime:</span> ' + upTime + '<br>S:::::S&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002<span class="red">Shell:</span> ' + Shell + '<br>S:::::S&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002<span class="red">Disk:</span> ' + Disk + '<br>&#x2002S::::SSSS<br>&#x2002&#x2002SS::::::SSSSS<br>&#x2002&#x2002&#x2002&#x2002SSS::::::::SS<br>&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002SSSSSS::::S<br>&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002S:::::S<br>&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002S:::::S<br>SSSSSSS&#x2002&#x2002&#x2002&#x2002&#x2002S:::::S<br>S::::::SSSSSS:::::S<br>S:::::::::::::::SS<br>&#x2002SSSSSSSSSSSSSSS</p></div>'
+						res: '<div><p>&#x2002&#x2002&#x2002SSSSSSSSSSSSSSS&#x2002&#x2002&#x2002&#x2002&#x2002<span class="red">visitor@anxietydev.github.io</span><br>&#x2002SS:::::::::::::::S&#x2002&#x2002&#x2002&#x2002<span class="red">OS:</span> Arch Linux ' + OSVer + '<br>S:::::SSSSSS::::::S&#x2002&#x2002&#x2002&#x2002<span class="red">Kernel:</span> ' + Kernel + '<br>S:::::S&#x2002&#x2002&#x2002&#x2002&#x2002SSSSSSS&#x2002&#x2002&#x2002&#x2002<span class="red">Uptime:</span> ' + upTime + '<br>S:::::S&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002<span class="red">Shell:</span> ' + Shell + '<br>S:::::S&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002<span class="red">Disk:</span> ' + Disk + '<br>&#x2002S::::SSSS<br>&#x2002&#x2002SS::::::SSSSS<br>&#x2002&#x2002&#x2002&#x2002SSS::::::::SS<br>&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002SSSSSS::::S<br>&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002S:::::S<br>&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002S:::::S<br>SSSSSSS&#x2002&#x2002&#x2002&#x2002&#x2002S:::::S<br>S::::::SSSSSS:::::S<br>S:::::::::::::::SS<br>&#x2002SSSSSSSSSSSSSSS</p></div>'
 					});
 			} else if (vInput.trim() !== "") {
 				launchCommandAsVisitor(commands[vInput]);
@@ -291,12 +291,12 @@ $('form').on('submit', function(e) {
 		if (root > 0) {
 			launchCommandAsRoot({
 				cmd: $('input').val(),
-				res: '<div><p>tristanisgoated.xyz: ' + $('input').val() + ': command not found</p></div>'
+				res: '<div><p>anxietydev.github.io: ' + $('input').val() + ': command not found</p></div>'
 			});
 		} else {
 			launchCommandAsVisitor({
 				cmd: $('input').val(),
-				res: '<div><p>tristanisgoated.xyz: ' + $('input').val() + ': command not found</p></div>'
+				res: '<div><p>anxietydev.github.io: ' + $('input').val() + ': command not found</p></div>'
 			});
 		}
 		if($('input').val() === 'clear') {
